@@ -18,16 +18,16 @@ This is a simple Spring Boot application that demonstrates how to use RabbitMQ f
 
 To run this application, you will need:
 
-- Java 11+
+- Java 21
 - Maven
-- A RabbitMQ instance (either locally or hosted, such as AWS MQ)
+- Docker
 
 ## Setup
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-repository/rabbitmq-demo.git
+git clone https://github.com/spuchol81/rabbitmq-demo.git
 cd rabbitmq-demo
 ```
 
