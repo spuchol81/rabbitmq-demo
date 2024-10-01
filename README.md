@@ -36,7 +36,7 @@ cd rabbitmq-demo
 ./mvnw clean install
 ```
 
-### 3. Configuration
+## Configuration
 Everything should work out of the box, as rabbitMQ credentials have been aligned in the application configuration and the docker compose specification
 
 application.yaml
