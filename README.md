@@ -8,7 +8,7 @@ This is a simple Spring Boot application that demonstrates how to use RabbitMQ f
 - [Setup](#setup)
 - [Configuration](#configuration)
 - [Running the Application](#running-the-application)
-- [Contribut](#contribute)
+- [Contribute](#contribute)
 - [License](#license)
 
 ## Requirements
