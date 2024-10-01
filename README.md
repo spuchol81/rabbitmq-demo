@@ -61,6 +61,8 @@ services:
       RABBITMQ_DEFAULT_PASS: guest
 ```
 ## Running the application
+Start the application
 ```bash
 ./mvnw spring-boot:run
 ```
+You can access the application here: [RabbitMQ Demo App](http://localhost:8080)
