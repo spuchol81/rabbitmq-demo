@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>RabbitMQ Message Receiver and Sender</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+<body>
+<div class="container">
+    <h1 class="my-4">RabbitMQ Message Sender and Receiver</h1>
+
+    <!-- Form to send a new message -->
+    <form th:action="@{/send}" method="post" class="mb-4">
+        <div class="form-group">
+            <label for="message">Message to Send:</label>
+            <input type="text" class="form-control" id="message" name="message" required>
+        </div>
+        <button type="submit" class="btn btn-success">Send Message</button>
+    </form>
+
+    <!-- Button to fetch received messages -->
+    <form th:action="@{/get-received-messages}" method="get">
+        <button type="submit" class="btn btn-primary">Get Received Messages</button>
+    </form>
+
+    <!-- Show the received messages -->
+    <h2 class="my-4">Received Messages</h2>
+    <ul class="list-group">
+        <li class="list-group-item" th:each="msg : ${receivedMessages}" th:text="${msg}"></li>
+    </ul>
+
+    <!-- Show if there are no messages received yet -->
+    <p th:if="${receivedMessages.size() == 0}">No messages received yet.</p>
+</div>
+</body>
+</html>

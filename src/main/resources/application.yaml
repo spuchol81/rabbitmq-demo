@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: rabbitmq-demo
+  rabbitmq:
+    username: guest
+    password: guest
+rabbitmq.exchange.name: my_exchange     # Name of the exchange
+rabbitmq.queue.name: my_queue        # Name of the queue
+rabbitmq.routing.key: my_routing_key   # Routing key to bind the queue to the exchange
