@@ -35,3 +35,32 @@ cd rabbitmq-demo
 ```bash
 ./mvnw clean install
 ```
+
+### 3. Configuration
+Everything should work out of the box, as rabbitMQ credentials have been aligned in the application configuration and the docker compose specification
+
+application.yaml
+```yaml
+spring:
+  application:
+    name: rabbitmq-demo
+  rabbitmq:
+    username: guest
+    password: guest
+rabbitmq.exchange.name: my_exchange     # Name of the exchange
+rabbitmq.queue.name: my_queue        # Name of the queue
+rabbitmq.routing.key: my_routing_key   # Routing key to bind the queue to the exchange
+```
+compose.yaml
+```yaml
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"  # AMQP port
+      - "15672:15672" # Management UI port
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+```
