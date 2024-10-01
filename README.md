@@ -2,6 +2,8 @@
 
 This is a simple Spring Boot application that demonstrates how to use RabbitMQ for messaging. The application contains a producer that sends messages to a RabbitMQ queue and a consumer that listens to and processes messages from the queue.
 
+![](docs/images/ui.png)
+
 ## Table of Contents
 
 - [Requirements](#requirements)
