@@ -8,10 +8,6 @@ This is a simple Spring Boot application that demonstrates how to use RabbitMQ f
 - [Setup](#setup)
 - [Configuration](#configuration)
 - [Running the Application](#running-the-application)
-- [Testing the Application](#testing-the-application)
-- [Endpoints](#endpoints)
-- [Useful Commands](#useful-commands)
-- [Troubleshooting](#troubleshooting)
 - [License](#license)
 
 ## Requirements
@@ -63,4 +59,8 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: guest
+```
+## Running the application
+```bash
+./mvnw spring-boot:run
 ```
