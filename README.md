@@ -8,6 +8,7 @@ This is a simple Spring Boot application that demonstrates how to use RabbitMQ f
 - [Setup](#setup)
 - [Configuration](#configuration)
 - [Running the Application](#running-the-application)
+- [Contribut](#contribute)
 - [License](#license)
 
 ## Requirements
@@ -66,3 +67,15 @@ Start the application
 ./mvnw spring-boot:run
 ```
 You can access the application here: [RabbitMQ Demo App](http://localhost:8080)
+
+## Contribute
+
+Contributions are always welcome!
+
+Feel free to open issues & send PR.
+
+## License
+
+Copyright &copy; 2024 [Broadcom, Inc. or its affiliates](https://vmware.com).
+
+This project is licensed under the [Apache Software License version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
