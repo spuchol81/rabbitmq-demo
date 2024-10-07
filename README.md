@@ -104,7 +104,7 @@ Oct 1 16:23:52.727
 
 Contributions are always welcome!
 
-Feel free to open issues & send PR.
+Feel free to open issues & send PR's.
 
 ## License
 
